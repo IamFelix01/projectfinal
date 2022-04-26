@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form method="POST" action="../../controllers/phpSrc/Admin_Manager/check.php">
+            <div class="text-field">
+                <input name="username" type="text" required>
+                <span></span>
+                <label for="">Username</label>
+            </div>
+            <div class="text-field">
+                <input name="password" type="password" required>
+                <span></span>
+                <label for="">Password</label>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>

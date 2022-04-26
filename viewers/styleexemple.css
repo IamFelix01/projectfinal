@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Pacifico&family=Raleway:ital,wght@0,100;0,300;0,400;0,600;1,200&family=Secular+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',
+    sans-serif;
+}
+
+
+ 
+ #background{
+     /* background-color: black; */
+    background-image: url('img/1.jpeg');
+    /* height: 90vh; */
+    background-size: cover;
+    /* opacity: 0.6;
+    filter: blur(8px); */
+    width: 100vw;
+    height: 110vh;
+    z-index: 1;
+  }
+  #hero {
+      height: 60px;
+  }
+#hero .links{
+    position: left;
+}
+#hero .links a{
+    color: white;
+    position: relative;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#hero .links ul li{
+    list-style: none;
+    display: inline-block;
+    padding:  8px 12px;
+    position: relative;
+}
+#hero .links ul li a {
+    /* margin: 0 25px; */
+     color: #fff; 
+    text-decoration: none;
+    font-size: 13px;
+    
+}
+#hero .links ul li a::after{
+    color:#FFED03;
+
+}
+#hero .links ul li a:hover::after{
+    opacity: 100%;
+}
+#hero .links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #FFED03;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+#hero .links ul li:hover::after{
+    width: 100%;
+}
+.container {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: center;
+
+}
+
+.none {
+
+    visibility: hidden;
+    
+}
+.about {
+
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    z-index: 10;
+
+}
+
+.about-text {
+
+    width: 60vw;
+    height: 30vh;
+    margin: auto;
+    text-align: center;
+    
+
+}
+.content{
+  
+    width: 100%;
+    max-width: 1280px;
+    margin:0 auto;
+    /* display: flex; */
+    flex-wrap: wrap;
+    /* align-items: center;  */
+    justify-content: space-around;
+ 
+}
+.about-text h1{
+    color:#ffed03 ;
+    font-size:50px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    letter-spacing:1px;
+    text-align: center;
+    align-items: center;
+}
+.about-text h5{
+    color: white;
+    /* color: black; */
+    font-size: 20px;
+    margin-bottom: 30px; 
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.about-text p{
+    color: #c0c4d6;
+    /* color: black; */
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 1px ; 
+    align-items: center; 
+  
+}
+#team{
+    text-align: right;
+    color: blanchedalmond;
+    font-size:10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    background-color: #ffed03;
+    color: black;
+    border: 2px solid transparent ;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 13px;
+    margin-bottom: 70px;      
+}
+button:hover{
+    transform: scale(1,1);
+    background-color: transparent;
+    border: 1px solid #ffed03 ;
+    color: #ffed03;
+    transition: .4s;
+    cursor: pointer;
+}
+button a:hover{
+    color: #ffed03;
+}
+button a{
+    color:black ;
+    text-decoration: none;
+}
+.foot{
+	
+	/* The background image will change whenever
+	we load the page */
+	background: rgb(92, 90, 90);
+	
+	/* This will make the background that have
+	been added will be darken */
+	background-blend-mode: darken;
+	background-size:cover;
+    padding: auto;
+    height: 50px;
+}
+.text-footer {
+	text-align: center;
+	padding: 10px 0;
+	font-family: 'Ubuntu', sans-serif;
+    display: flex;
+	justify-content: center;
+}
+
+@media screen  and ( max-width :1180px ) {
+    .about{
+        width: 100%;
+        height: auto;
+        padding: 30px 0px;
+    }
+}
+@media screen  and ( max-width :650px )
+{
+.about .content img{
+    margin-bottom: 35px; 
+
+}
+.about-text h1 {
+   font-size: 60px ;
+   margin-bottom: 25px;;
+}
+}

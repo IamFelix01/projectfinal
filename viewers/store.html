@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="toggle-nav-container">
+                    <button type="button" class="open-btn">
+                        <div class="hamburger">
+                            <div class="line blue"></div>
+                        </div>
+                    </button>
+                </div>
+                <div class="list-links">
+                    
+                    <ul class="blue">
+                        <li><a href="./index.php">HOME</a></li>
+                        <li><a href="./store.html">STORE</a></li>
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="Contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="cart-icon-container">
+                    <button class="cart-icon-btn">
+                        <img src="./img/Asset 1.png" class="carticon">
+                    </button>
+                    <span class="cart-item-count">1</span>
+                </div>
+            </nav>
+        </div>         
+    </header>
+    <div class="pop-up-menu center">
+
+       <div class="center">
+
+           <div class="list-links">
+                <div class="toggle-nav-container open">
+                    <button type="button" class="close-btn">
+                        <div class="hamburger">
+                            <div class="line"></div>
+                        </div>
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="./index.php">HOME</a></li>
+                    <li><a href="./store.html">STORE</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+       </div>
+            
+   
+       
+    </div>
+    <div class="cart-overlay">
+        <aside class="cart">
+          <button class="cart-close">
+            <i class="fas fa-times"></i>
+          </button>
+          <header>
+            <h3 class="text-slanted">your bag</h3>
+          </header>
+          <!-- cart items -->
+          <div class="cart-items">
+            
+          </div>
+          <!-- footer -->
+          <footer>
+            <h3 class="cart-total text-slanted">
+              total : $12.99
+            </h3>
+            <button class="cart-checkout btn view-products">valid command</button>
+          </footer>
+        </aside>
+      </div>
+
+    <div class="location center">
+       
+            
+        <div class="container">
+            HOME / STORE
+        </div>
+        
+    </div>
+
+    <section class="store-section">
+        <div class="container">
+            <aside class="filter-menu">
+                <div class="apply">
+                    <span>aplly filter</span>
+                    <button class="btn-more btn-show-filter-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>                    </button>
+                </div>
+                <div class="container-filter-menu">
+                    <div class="box-filter-menu">
+                        <form class="input-form">
+                            <div class="container-input">
+                                 <input type="text" class="search-input" placeholder="search..." />
+                                 <button class="btn-filter" type="button">
+                                     <i class="fas fa-search"></i>
+                                 </button>
+                                 
+                            </div>
+                   
+                  </form>
+                  <!-- categories -->
+                  <h4>Company</h4>
+                  <article class="companies">
+                    <div class="container-filter">
+
+                        <button class="btn-filter">
+                            <input type="checkbox" value="all">
+                        </button>
+                        <span>all</span>
+                    </div>
+                  </article>
+                  <h4>Category</h4>
+                  <article class="categories">
+                    <div class="container-filter">
+
+                        <button class="btn-filter">
+                            <input type="checkbox" value="all">
+                        </button>
+                        <span>all</span>
+                    </div>
+                  </article>
+                  <!-- price -->
+                  <h4>Price</h4>
+                  <form class="price-form">
+                    <input
+                      type="range"
+                      class="price-filter"
+                      min="10"
+                      value="50"
+                      max="100"
+                    />
+                  </form>
+                  <p class="price-value"> Price is : </p>
+                    </div>
+                    
+                </div>
+                
+            </aside>
+            <div class="container-products">
+                <article class="product center">
+                    <div class="container-img-product">
+                        <img src="./img/Camera.png" alt="">
+                        <div class="container-buttons center">
+                            <a href="./product.html" class="btn"><i class="fas fa-search"></i></a>
+                            <button class="product-cart-button btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    
+                    </div>
+                    <h3 class="product-name">high-back-bench</h3>
+                    <span class="product-price">$9.99</span>
+                </article>
+                <article class="product center">
+                    <div class="container-img-product">
+                        <img src="./img/Camera.png" alt="">
+                        <div class="container-buttons center">
+                            <a href="./product.html" class="btn"><i class="fas fa-search"></i></a>
+                            <button class="product-cart-button btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    
+                    </div>
+                    <h3 class="product-name">high-back-bench</h3>
+                    <span class="product-price">$9.99</span>
+                </article>
+                <article class="product center">
+                    <div class="container-img-product">
+                        <img src="./img/Camera.png" alt="">
+                        <div class="container-buttons center">
+                            <a href="./product.html" class="btn"><i class="fas fa-search"></i></a>
+                            <button class="product-cart-button btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <h3 class="product-name">high-back-bench</h3>
+                    <span class="product-price">$9.99</span>
+                </article>
+            </div>
+        </div>
+    </section>
+    <script src="../controllers/jsSrc/store.js" type="module"></script>
+</body>
+</html>

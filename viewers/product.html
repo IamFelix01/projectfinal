@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+</head>
+<body>
+      <header>
+        <div class="container">
+            <nav>
+                <div class="toggle-nav-container">
+                    <button type="button" class="open-btn">
+                        <div class="hamburger">
+                            <div class="line blue"></div>
+                        </div>
+                    </button>
+                </div>
+                <div class="list-links">
+                    
+                    <ul class="blue">
+                        <li><a href="./index.php">HOME</a></li>
+                        <li><a href="./store.html">STORE</a></li>
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="Contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="cart-icon-container">
+                    <button class="cart-icon-btn">
+                        <img src="./img/Asset 1.png" class="carticon">
+                    </button>
+                    <span class="cart-item-count">1</span>
+                </div>
+            </nav>
+        </div>         
+    </header>
+      <div class="pop-up-menu center">
+
+        <div class="center">
+
+            <div class="list-links">
+                  <div class="toggle-nav-container open">
+                      <button type="button" class="close-btn">
+                          <div class="hamburger">
+                              <div class="line"></div>
+                          </div>
+                      </button>
+                  </div>
+                  <ul>
+                      <li><a href="./index.php">HOME</a></li>
+                      <li><a href="./store.html">STORE</a></li>
+                      <li><a href="./about.html">ABOUT</a></li>
+                      <li><a href="Contact.html">CONTACT</a></li>
+                  </ul>
+              </div>
+        </div> 
+      </div>
+      <div class="location center">        
+          <div class="container">
+              HOME / high-back-bench
+          </div>
+          
+      </div>
+      <div class="cart-overlay">
+        <aside class="cart">
+          <button class="cart-close">
+            <i class="fas fa-times"></i>
+          </button>
+          <header>
+            <h3 class="text-slanted">your bag</h3>
+          </header>
+          <!-- cart items -->
+          <div class="cart-items">
+            
+          </div>
+          <!-- footer -->
+          <footer>
+            <h3 class="cart-total text-slanted">
+              total : $12.99
+            </h3>
+            <button class="cart-checkout btn view-products">valid command</button>
+          </footer>
+        </aside>
+      </div>
+      <section class="single-product">
+          <div class="container single-product-center">
+            <img
+              src="./img/Camera.png"
+              class="single-product-img img"
+              alt=""
+            />
+            <article class="single-product-info">
+              <div>
+                <h2 class="single-product-title">high-back-bench</h2>
+                <p class="single-product-company text-slanted">
+                  by marcos
+                </p>
+                <p class="single-product-price">$30.00</p>
+                <p class="single-product-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id,
+                  modi? Minima libero doloremque necessitatibus! Praesentium
+                  recusandae quod nesciunt animi voluptatem!
+                </p>
+                <button class="addToCartBtn btn add-to-cart-btn" data-id="id">
+                  add to cart
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+      <script src="../controllers/jsSrc/product.js" type="module"></script>
+</body>
+</html>

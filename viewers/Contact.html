@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/5b7ddc13cc.js" crossorigin="anonymous"></script>
+    </head>
+    <body>  
+      <header>
+        <div class="container">
+            <nav>
+                <div class="toggle-nav-container">
+                    <button type="button" class="open-btn">
+                        <div class="hamburger">
+                            <div class="line"></div>
+                        </div>
+                    </button>
+                </div>
+                <div class="list-links">
+                    
+                    <ul>
+                        <li><a href="./index.php">HOME</a></li>
+                        <li><a href="./store.html">STORE</a></li>
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="Contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="cart-icon-container">
+                    <button class="cart-icon-btn">
+                        <img src="./img/cart1.png" class="carticon">
+                    </button>
+                    <span class="cart-item-count">1</span>
+                </div>
+            </nav>
+        </div>         
+    </header>
+    <div class="pop-up-menu center">
+
+       <div class="center">
+
+           <div class="list-links">
+                <div class="toggle-nav-container open">
+                    <button type="button" class="close-btn">
+                        <div class="hamburger">
+                            <div class="line"></div>
+                        </div>
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="./index.php">HOME</a></li>
+                    <li><a href="./store.html">STORE</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+       </div>
+            
+   
+       
+    </div>
+    <div class="cart-overlay">
+        <aside class="cart">
+          <button class="cart-close">
+            <i class="fas fa-times"></i>
+          </button>
+          <header>
+            <h3 class="text-slanted">your bag</h3>
+          </header>
+          <!-- cart items -->
+          <div class="cart-items">
+           
+          </div>
+          <!-- footer -->
+          <footer>
+            <h3 class="cart-total text-slanted">
+              total : $12.99
+            </h3>
+            <button class="cart-checkout btn view-products">checkout</button>
+          </footer>
+        </aside>
+      </div>
+    <section id="contact" class="center">
+      <div class="blur">
+          <div class="container">
+            <h1 class="section-header">Contact</h1>
+            <div class="contact-wrapper">
+          
+          <!-- Left contact page --> 
+            
+            <form id="contact-form" class="form-horizontal" role="form" autocomplete="off">
+              
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required >
+                </div>
+              </div>
+              <br>
+        
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                </div>
+              </div>
+              <br>
+        
+              <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+              
+              <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                <div class="alt-send-button">
+                  <div class="container-icon center transition">
+                    <i class="fa fa-paper-plane"></i>
+                  </div>
+                
+                  <span class="send-text center transition">SEND</span>
+                </div>
+              
+              </button>
+              
+            </form>
+
+
+            
+          <!-- Left contact page --> 
+            
+              <div class="direct-contact-container">
+        
+                <ul class="contact-list">
+                  
+                  <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give us a call">CALL US</a></span></i></li>
+                  
+                  <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send us an email">SEND AN EMAIL</a></span></i></li>
+                  
+                </ul>
+        
+                <hr>
+                <ul class="social-media-list">
+                  <li><a href="#" target="_blank" class="contact-icon">
+                    <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  </li>
+                  <li><a href="#" target="_blank" class="contact-icon">
+                    <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  </li>       
+                </ul>
+                <hr>
+        
+                <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+        
+              </div>
+            
+          </div>
+
+        </div>
+      </div>
+    
+        
+    
+    
+    <script src="../controllers/jsSrc/store.js" type="module"></script>
+  </section> 
+     </body>
+</html>    
+    
