@@ -12,11 +12,12 @@ import './error.js';
 import showError from './error.js';
 window.addEventListener('DOMContentLoaded',async()=>{
     const search = window.location.search ; 
-        if(search === '?status=1'){
-            alert("you are logged succefully");
-        }
-    const data = await fetchingData('../controllers/phpSrc/test.php');
+    if(search === '?status=1'){
+        alert("you are logged succefully");
+    }
+    let data = await fetchingData('../controllers/phpSrc/test.php');
     setStorage('products',data);
+    data = data.slice(-3);
     displayProducts(data);
     const addTocartBtn = [...document.querySelectorAll('.add-to-cart-btn')];
     addTocartBtn.forEach((btn)=>{
@@ -25,5 +26,5 @@ window.addEventListener('DOMContentLoaded',async()=>{
             addToCart(btn.getAttribute('data-id'));
         });
     })
-    showError();
+    showError();     
 });

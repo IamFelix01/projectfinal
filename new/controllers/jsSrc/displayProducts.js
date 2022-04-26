@@ -17,7 +17,7 @@ const displayProducts = (array)=>{
             
             </div>
             <h3 class="product-name">${name}</h3>
-            <span class="product-price">$${price}</span>
+            <span class="product-price">$${parseFloat(price)}</span>
         </article>`
         }).join('');
     }

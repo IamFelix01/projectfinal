@@ -159,7 +159,7 @@
                     <h1>PHOTOGRAPHY</h1>
                     <h3> Workshop</h3>
                     <?php if(isset($_SESSION["login"])) {?>
-                    <a href ="./sign-in.php" type="button" class="Register">
+                    <a href ="../controllers/phpSrc/logoutUser.php" type="button" class="Register">
                         LOG OUT
                     </a>
                     <?php } ?>

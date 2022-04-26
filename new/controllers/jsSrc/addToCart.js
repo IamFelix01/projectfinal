@@ -11,7 +11,7 @@ const addToCartDOM = ({ idproduct, name, price, url, amount }) => {
             />  
             <div>
               <h4 class="cart-item-name">${name}</h4>
-              <p class="cart-item-price">$${price}</p>
+              <p class="cart-item-price">$${parseFloat(price)}</p>
               <button class="cart-item-remove-btn" data-id="${idproduct}">remove</button>
             </div>
           

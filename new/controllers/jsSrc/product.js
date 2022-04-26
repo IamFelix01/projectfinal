@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             imgDOM.src = `Admin_Manager/${url}`;
             titleDOM.textContent = name ; 
             companyDOM.textContent = `by ${company}`; 
-            priceDOM.textContent = `$${price}`; 
+            priceDOM.textContent = `$${parseFloat(price)}`; 
             descriptionDOM.textContent = description ; 
             addToCartBtn.setAttribute('data-id',`${id}`);
         }
