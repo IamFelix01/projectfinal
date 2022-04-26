@@ -23,6 +23,7 @@ const setupFilterAside =async ()=>{
        priceFilter.setAttribute(key,price[key]);
     }
     priceValueDOM.textContent =`price is : $${parseFloat(priceFilter.getAttribute('max'))}`;
+    priceFilter.value = `${parseFloat(priceFilter.getAttribute('max'))}`;
 
 }
 

@@ -92,7 +92,8 @@
           if($image['full_path']){
 
             $url_new = 'images/'.randomString(8).'/'.$image['name'];
-
+            // echo $url_new;
+            // exit;
             mkdir(dirname($url_new));
 
             move_uploaded_file($image['tmp_name'],$url_new);
@@ -100,23 +101,17 @@
       
      
       $query = "UPDATE products SET name = '{$name_new}' , price = '{$price_new}' , stock = '{$stock_new}', idcategory = '{$idcateg_new}',
-                description = '{$desc_new}', url = '{$url_new}',company = '{$company_new}' WHERE idproduct = $prodid";
+                description = '{$desc_new}',company = '{$company_new}' WHERE idproduct = $prodid";
       $update_user = mysqli_query($conn, $query);
     //   echo $_SESSION["login"]; 
     //   exit ; 
       $job = $_SESSION["login"] == 'root'?'admin':'manager'; 
-      header("Location: Admin.php?job=$job");
+     header("Location: Admin.php?job=$job");
     }    
     }         
 ?>
 
-<?php if (!empty($errors)){ ?>
-  <div class ="alert alert-danger">
-    <?php foreach($errors as $error){?>
-      <div><?php echo $error ?></div>
-    <?php } ?>
-  </div>
-<?php } ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -130,11 +125,8 @@
 <section class="add-product admin" id="add-product">
 <h1 class="title">Update Product</h1>
             
-            <form class="card" method="POST">
-                <div class="form-control">
-                   
-                    <input type="file" name="url" id="img">
-                </div>
+            <form class="card" method="POST" enctype="multipart/form-data">
+          
                 <div class="form-control">
                    <input type="text" name="name" autocomplete="off" value="<?php echo $name ?>" required>
                    <label >Name</label>

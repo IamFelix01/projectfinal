@@ -100,7 +100,7 @@ async function generateFinalRequest(){
                 else{
                     request += ' and '
                 }
-                request+=`${key}${key==='price'? ` <= ${res[key]}` : ` = '${res[key]}'`} `; 
+                request+=`${key}${key==='price'? ` <= ${res[key]}` : ` like '${res[key]}%'`} `; 
                 
             }
         }
